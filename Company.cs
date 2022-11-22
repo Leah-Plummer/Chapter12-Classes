@@ -27,31 +27,16 @@ namespace Classes
             Employees = new List<Employee>();
         }
 
-       
+      public void ListEmployees() 
+        {
+            foreach (Employee employee in Employees) 
+            {
+            Console.WriteLine(employee.FirstName + employee.LastName + "works for " + Name + " as a " + employee.Title + " since " + employee.StartDate);
+            }
+        }  
     }
 
     
 }
 
-/*
-
-public class Customer
-{
-    public string FirstName { get; set; }
-
-    public string LastName { get; set; }
-
-    public bool IsLocal { get; set; }
-
-    // Calculated property that has no setter. It is readonly.
-    public string FullName 
-    {
-        get
-        {
-            return $"{FirstName} {LastName}";
-        }
-    }
-}
-
-*/
 

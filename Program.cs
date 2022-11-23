@@ -1,4 +1,6 @@
 ﻿using System;
+using Classes; 
+
 
 namespace Classes
 {
@@ -24,12 +26,9 @@ namespace Classes
             foreach (Employee employee in employees)
             {
                 target.Employees.Add(employee);
-                Console.WriteLine($"{employee.FirstName}{employee.LastName} works for {target.Name} as a {employee.Title} since {employee.StartDate}");
+                target.ListEmployees(employee);
 
-            }
-
-
-               
+            }  
             /*
                 Iterate the company's employee list and generate the
                 simple report shown above

@@ -28,17 +28,18 @@ namespace Classes
             Employees = new List<Employee>();
         }
 
-      public void ListEmployees() 
+      public void ListEmployees(Employee employee) 
         {
-            foreach (Employee employee in Employees) 
-            {
+            
                 Console.WriteLine($"{employee.FirstName}{employee.LastName} works for {Name} as a {employee.Title} since {employee.StartDate}");
-            }
+        
             
         } 
-     
-
+        
+    
     }   
 }
+
+
 
 

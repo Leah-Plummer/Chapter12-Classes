@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Classes; 
 
 namespace Classes
 {
@@ -31,7 +33,7 @@ namespace Classes
       public void ListEmployees(Employee employee) 
         {
             
-                Console.WriteLine($"{employee.FirstName}{employee.LastName} works for {Name} as a {employee.Title} since {employee.StartDate}");
+                Console.WriteLine($"{employee.FirstName} {employee.LastName} works for {Name} as a {employee.Title} since {employee.StartDate}");
         
             
         } 
